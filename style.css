@@ -1,0 +1,73 @@
+/* Clase grid para la generacion de columnas y filas */
+.grid{
+    display: grid;
+    /*Medidas de columnas */
+    grid-template-columns: 20% 60% 20%; 
+    /* Medidas de filas */
+    grid-template-rows: 10% 6% 44% 2% 38%;
+    height: 100%;
+}
+
+.titulo{
+    /* Fusion de columnas */
+    grid-column: 1/4;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.cont_barra{
+    /* Fusion de columnas */
+    grid-column: 1/4;
+}
+
+.cont_boton{
+    /* Seleccion de columna */
+    grid-column: 2;
+    align-self: center;}
+
+.cont_dado{
+    /* Seleccion de columna */
+    grid-column: 2;
+    background-color: #222222;
+    /* Alineamiento central */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+#dado{
+    height: 40%;
+}
+
+#barra_progreso{
+    border-radius: 0;
+    width: 100%;
+    height: 3vh;
+}
+
+.cont_tabla{
+    grid-column: 1/4;
+    /* Alineamiento central */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 3vh;
+}
+
+#tabla{
+    width: 62%;
+}
+
+table,td,th {
+	border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/* Ampliacion de las etiquetas html y body al 100% del navegador.
+   Quitando margenes */
+html,body{
+    height: 100%;
+    margin: 0;
+}
+

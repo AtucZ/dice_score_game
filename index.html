@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugando con dados</title>
+    <!-- Llama el archivo Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Llama el archivo JavaScript -->
+    <script src="clase.js"></script>
+</head>
+<body>
+    
+    <!-- Contenedor tipo grillas -->
+    <div class="grid">
+
+        <!-- Divisor titulo -->
+        <div class="titulo"><h1>Lanzando el dado</h1></div>
+
+        <!-- Divisior botones -->
+        <!-- onclick llama la funcion javascript -->
+        <div class="cont_boton">
+            <button onclick="lanzar_dado()">Lanzar</button>
+            <button onclick="reiniciar()">Reiniciar</button>
+            <button onclick="recargar()">Recargar Web</button>
+        </div>
+
+        <!-- Divisor imagen dado -->
+        <div class="cont_dado"><img id="dado" src="recursos/1.png" alt="dado"></div>
+
+        <!-- Divisor barra de progreso -->
+        <div class="cont_barra">
+            <meter id="barra_progreso"></meter>
+        </div>
+
+        <!-- Divisor tabla -->
+        <div class="cont_tabla">
+
+            <!-- Tabla de Puntaje -->
+           <table id="tabla" >
+            <caption>Resultados de los lanzamientos</caption>
+            <thead>
+                <th>N°</th>
+                <th>Puntaje</th>
+            </thead>
+            
+            <!-- Divisor donde se genera el puntaje y se crean filas por javascript -->
+            <tbody id="cuerpo_tabla">
+            </tbody>
+
+           </table>
+        </div>
+    </div>
+    
+</body>
+</html>
